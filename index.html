@@ -1,1 +1,101 @@
-1
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link media="all" rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h4>Unique values</h4>
+    <textarea id="inputArray">
+      ["actor",
+      "actor",
+      "carot",
+      "listen",
+      "enlist",
+      "debit",
+      "bidet",
+      "tear",
+      "rate",
+      "night",
+      "thing",
+      "lives",
+      "veils",
+      "stressed",
+      "desserts",
+      "dormitory",
+      "dirty room",
+      "rescue",
+      "secure",
+      "a gentleman",
+      "elegant man",
+      "listen",
+      "heart",
+      "angel",
+      "leader",
+      "silent"]</textarea>
+    <div class="button">
+      <button onclick="unique(document.getElementById('inputArray').value)">Unique values</button>
+    </div>
+    <textarea id="outputSet"></textarea>
+  </div>
+
+  <div class="container">
+    <h4>Unique values (version 2)</h4>
+    <textarea id="inputArray2">
+      ["actor",
+      "actor",
+      "carot",
+      "listen",
+      "enlist",
+      "debit",
+      "bidet",
+      "tear",
+      "rate",
+      "night",
+      "thing",
+      "lives",
+      "veils",
+      "stressed",
+      "desserts",
+      "dormitory",
+      "dirty room",
+      "rescue",
+      "secure",
+      "a gentleman",
+      "elegant man",
+      "listen",
+      "heart",
+      "angel",
+      "leader",
+      "silent"]</textarea>
+    <button onclick="unique2(document.getElementById('inputArray2').value)">Unique values(version 2)</button>
+    <textarea id="outputSet2"></textarea>
+  </div>
+
+  <div class="container">
+    <h4>Getter and setter</h4>
+    <input type="text" id="inputSetter" onchange="getterSetter(document.getElementById('inputSetter').value)">
+    <input type="text" id="outputGetter">
+  </div>
+
+  <div class="container">
+    <h4>Create arr method</h4>
+    <input type="text" id="inputFrom" value="1">
+    <input type="text" id="inputTo" value="10">
+    <button
+      onclick="createArrMethod(document.getElementById('inputFrom').value,document.getElementById('inputTo').value)">Create
+      array</button>
+    <input type="text" id="outputArray" value="Result">
+  </div>
+
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
